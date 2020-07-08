@@ -7,4 +7,3 @@
 [0-9]+	{ yylval = atoi(yytext); return ENTERO; }
 \+	{ return MAS; }
 \n	{ return ENTER; }
-.
