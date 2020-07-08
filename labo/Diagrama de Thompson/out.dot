@@ -1,0 +1,21 @@
+digraph maquina {
+	shape = circle;
+	rankdir = LR;
+	1[shape = box label= "(a|b)*.a.b.b"];
+	0 [shape = point];
+	0 -> g;
+	m [shape = doublecircle];
+	g -> e [label=ε];
+	e -> a [label=ε];
+	a -> b [label=a];
+	e -> c [label=ε];
+	c -> d [label=b];
+	b -> f [label=ε];
+	d -> f [label=ε];
+	f -> e [label=ε];
+	f -> h [label=ε];
+	g -> h [label=ε];
+	h -> i [label=a];
+	i -> k [label=b];
+	k -> m [label=b];
+	}
