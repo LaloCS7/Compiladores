@@ -1,0 +1,25 @@
+digraph automata{
+inicio[shape=point];
+node[shape=circle];
+rankdir = LR;
+inicio -> 19[label="inicio"];
+20[shape=doublecircle];
+19 -> 13[label="&epsilon;"];
+19 -> 15[label="&epsilon;"];
+13 -> 1[label="&epsilon;"];
+13 -> 9[label="&epsilon;"];
+1 -> 2[label="a"];
+2 -> 4[label="b"];
+4 -> 6[label="c"];
+6 -> 14[label="&epsilon;"];
+14 -> 20[label="&epsilon;"];
+9 -> 7[label="&epsilon;"];
+7 -> 8[label="a"];
+8 -> 10[label="&epsilon;"];
+8 -> 7[label="&epsilon;"];
+10 -> 12[label="c"];
+12 -> 14[label="&epsilon;"];
+15 -> 16[label="b"];
+16 -> 18[label="c"];
+18 -> 20[label="&epsilon;"];
+}
